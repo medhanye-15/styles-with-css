@@ -3,30 +3,61 @@
 <html>
   <head>
     <title>My Cool Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex,nofollow">/
     <style>
       body{
         font-family: 'courier new';
         max-width: 960px;
         width: 90%;
+        background: #ffffff;
+        margin:auto;
+        padding: 1%;
       }
       html{
         background-color:#ccc;
       }
+
+
+    nav{
+        text-align:center; /* centers the nav */
+      }
+      
+      nav ul {
+          list-style:none; /* removes the bullets */
+        }
+      nav ul li
+        {
+          display:inline-block; /* makes horizontal, but able to declare margins */
+          margin:0 2%; /* margin left-right, gets smaller as necessary */
+        }
+    nav a:hover{
+        text-decoration: none;
+      footer{
+          text-align: center;
+          clear: both;
+      }
     </style>
   </head>
   <body>
-    <h1>My Cool Website</h1>
+  <header>
+     <h1>My Cool Website</h1>
+     <!-- nav goes here -->
+	<nav>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+				<li><a href="#">Link 6</a></li>
+			</ul>
+	</nav>
+
+  </header>
    <p>Clever content goes here. If I had more to say, I would say it. Here is how to use the <strong>strong</strong> tag. Here is how to use the <em>emphasis</em> tag. Here is how to use the <strike>strikethrough</strike> tag.</p>
     <p>Clever content goes here</p>
     <p>My Favorite movies</p>
-  <p>
-   <p>
-     <ul>
-       <li>Hocus Pocus</li>
-       <li>The Fast and the Furies</li>
-        <li>Armageddon</li>
-     </ul>
-     </p>
   </p>
     <p>My favorite fruit flavors</p>
     <p>
@@ -39,10 +70,7 @@
     <p>Here is a picture</p>
     <p><img src="https://picsum.photos/200/300" /></p>
    <p>Picture provided by <a href="https://picsum.photos/ "target="_blank">Picsum Photos</a></p>
-  </body>
-</html>
-
-  <div>
+   <div>
    Here we are inside a div. Notice that it looks pretty like a paragraph. Here is a <span style="background-color:yellow">span</span>. See the difference?
 </div>
  
@@ -63,3 +91,12 @@
       <td>Enrique@example.com</td>
     </tr>
 </table>
+
+<footer>
+  <p>&copy; 2021 My Cool Website</p>
+</footer>
+
+
+</body>
+
+</html>
